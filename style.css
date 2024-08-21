@@ -1,0 +1,139 @@
+body {
+  background: rgb(190, 188, 188);
+  background: linear-gradient(48deg, rgb(190, 188, 188) 2%, rgb(176, 174, 174) 57%, rgb(233, 233, 233) 100%);
+}
+
+.preloader {
+  width: 200px;
+  height: 200px;
+}
+
+.preloader,
+.preloader hr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.preloader hr {
+  box-sizing: border-box;
+  display: block;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  animation: 1s spin linear infinite;
+}
+
+.preloader hr:nth-of-type(1) {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-top-color: #c4c5c5;
+  animation-duration: 2.4s;
+}
+
+.preloader hr:nth-of-type(2) {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-top-color: #979797;
+  animation-duration: 2s;
+}
+
+.preloader hr:nth-of-type(3) {
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-top-color: #686969;
+  animation-duration: 1.6s;
+}
+
+.preloader hr:nth-of-type(4) {
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border-top-color: #454645;
+  animation-duration: 1.2s;
+}
+
+.preloader hr:nth-of-type(5) {
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  border-top-color: #353535;
+  animation-duration: 0.8s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 40vw;
+  height: 50vh;
+}
+
+.getPostBtn {
+  display: block;
+  background-color: #1a1a1a;
+  border-radius: 50px;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 400px;
+  height: 50px;
+  border: none;
+  color: #fdfdfd;
+  size: 15px;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 30px;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+.posts__block {
+  width: 400px;
+  height: 600px;
+  background: rgb(77, 71, 71);
+  background: linear-gradient(48deg, rgb(77, 71, 71) 2%, rgb(115, 115, 115) 52%, rgb(138, 138, 138) 100%);
+}
+.posts__block--title {
+  padding-top: 30px;
+  text-align: center;
+  margin: 0;
+  color: #fdfdfd;
+  size: 15px;
+  font-family: "Gill Sans", sans-serif;
+  background-color: #1a1a1a;
+  width: 50%;
+  height: 40%;
+}
+.posts__block--description {
+  padding-top: 30px;
+  text-align: center;
+  margin: 0;
+  margin-left: 200px;
+  color: #fdfdfd;
+  size: 15px;
+  font-family: "Gill Sans", sans-serif;
+  background-color: #1a1a1a;
+  width: 50%;
+  height: 50%;
+}/*# sourceMappingURL=style.css.map */
